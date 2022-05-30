@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta Usuario</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="logo">
+            <img src="../img/logo 2.jpg" alt="">
+        </div>
+        <div class="tituloPagina">
+            <h1>Alta de Usuario</h1>
+        </div>
+        <div>
+            <a href="#pie"> Ir al pie de pagina</a>
+        </div>
+        <hr>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html"> Home</a></li>
+                <li><a href="./login.html"> Login</a></li>
+                <li><a href="./altausuario.html"> Alta de Usuario</a></li>
+                <li><a href="./turnos.html"> Turnos</a></li>
+                <li><a href="./historiaclinica.html"> Historia Clinica</a></li>
+                <li><a href="./OOSS.html"> Obras Sociales</a></li>
+                <li><a href="./profesionales.html"> Profesionales</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main class="main">
+        <section>
+            <p><strong>ALTA DE USUARIO</strong> </p>
+            <form action="enviar.php" method="get" enctype="text/plain">
+                <div>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+                </div>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="Apellido" placeholder="Ingrese su apellido" requerido>
+                </div>
+                <div>
+                    <label for="Texto">Pais de Origen</label>
+                    <select name="Pais" id="Pais">
+                        <option value="01">Argentina</option>
+                        <option value="02">Brasil</option>
+                        <option value="03">Chile</option>
+                        <option value="04">Uruguay</option>
+                        <option value="05">Colombia</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Texto">Obra Social</label>
+                    <select name="Obra Social" id="Obra Social">
+                        <option value="01">Osde</option>
+                        <option value="02">Swiss Medical</option>
+                        <option value="03">Galeno</option>
+                        <option value="04">OSECAC</option>
+                        <option value="05">Particular</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Plan">Plan:</label>
+                    <input type="text" id="Npln" placeholder="Ingrese su Plan" requerido>
+                </div>
+                <div>
+                    <label for="Socio">Número de Socio:</label>
+                    <input type="text" id="Nsocio" placeholder="Ingrese su número de socio" requerido>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Ingrese su Email" required>
+                </div>
+                <div>
+                    <label for="pass">Password: </label>
+                    <input type="password" id="pass" placeholder="Ingrese su Password" required>
+                </div>
+                <div>
+                    <label for="adjunto">Adjuntar DNI y Credencial: </label>
+                    <input type="file" id="adjunto" required>
+                </div>
+
+                <div>
+                    <label for="Acepto">Acepto terminos y condiciones</label>
+                    <input type="checkbox" id="Acepto">
+                    <label for="News">Acepto recibir News</label>
+                    <input type="checkbox" id="News">
+                </div>
+                <div>
+                    <input type="submit" value="Enviar Ahora">
+                    <input type="reset" value="Borrar todo">
+                </div>
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer id="pie">
+        <a href="tel:+5491146287979">Teléfono</a>
+        <a href="https://goo.gl/maps/ZP5Rj73B7KSN8KAD8" target="blank"> Dirección </a>
+        <a href="https://www.facebook.com/" target="blank"> Seguinos en Facebook </a>
+        <a href="https://www.instagram.com/" target="blank"> Seguinos en Instagram </a>
+        <a href="https://twitter.com/?lang=es" target="blank"> Seguinos en Twitter </a>
+    </footer>
+
+
+</body>
+
+</html>
