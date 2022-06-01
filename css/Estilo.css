@@ -64,7 +64,7 @@
     align-content: stretch;
     justify-content: space-around;
     justify-items: center;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 
@@ -149,11 +149,14 @@ footer a {
     }
 
     .imagenes {
-        display: flex;
+        display: grid;
+        display: grid;
         gap: 10px;
-        border: 5px solid black;
-        flex-flow: column;
+        align-items: stretch;
+        align-content: stretch;
         justify-content: space-around;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
 
     }
 
