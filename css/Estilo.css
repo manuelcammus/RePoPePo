@@ -5,16 +5,14 @@
     font-family: sans-serif;
 }
 
-.menu ul {
-    list-style: none;
-}
+
 
 .menu li {
     display: inline;
-    margin-right: 30px;
 }
 
 .menu ul li :hover {
+    list-style: none;
     background-color: blueviolet;
     color: blanchedalmond;
 }
@@ -77,8 +75,7 @@
     justify-items: center;
     align-items: center;
     grid-template-areas:
-        "logo titulo titulo"
-        "acerca nav nav"
+        "acerca titulo titulo"
         "titulosec titulosec titulosec"
         "textosec textosec textosec"
         "image image banner"
@@ -107,7 +104,6 @@ footer a {
             "logo"
             "acerca"
             "titulo"
-            "nav"
             "titulosec"
             "textosec"
             "image"
