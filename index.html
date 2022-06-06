@@ -1,26 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ar" dir="rtl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/Estilo.css">
+    <title>Home</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <nav class="navbar bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="./img/logo 2.jpg" alt="" width="300" height="240">
-                </a>
-            </div>
-        </nav>
+
+    <header class="container-fluid bg-primary d-flex justify-content-center">
+        <p class="text-ligth mb-0 p-2 fs-3">Sistema de Gestión de Consultorios</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
         <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span class="text-primary fs-5 fw-bold">SGC</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -29,22 +32,21 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a href="./index.html"> Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./Pages/turnos.html"> Turnos</a>
+                        <a class="nav-link" href="./Pages/turnos.html">Turnos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./Pages/OOSS.html"> Obras Sociales</a>
-                    </li>
+                        <a class="nav-link" href="./Pages/OOSS.html">O. Sociales</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./Pages/profesionales.html"> Servicios para Profesionales</a>
+                        <a class="nav-link" href="./Pages/profesionales.html">Profesionales</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Usuario
+                            Usuarios
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="./Pages/login.html">Login</a></li>
@@ -56,62 +58,89 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link" href="#pie">Sobre Nosotros</a>
                     </li>
                 </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary btn-primary-online-success" type="submit">Búsqueda<button>
+                </form>
             </div>
         </div>
     </nav>
 
-    <div id="grid-container">
-        <section class="tituloPagina">
-            <h1>Sistema de Gestión de Consultorios</h1>
-        </section>
-        <section class="acerca">
-            <a href="#pie">Acerca de Nosotros</a>
-        </section>
-        <section class="tituloSeccion">
-            <div>
-                <h2><strong>ACERCA DEL PROFESIONAL Y DEL CONSULTORIO</strong></h2>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./img/consultorio.jpg" class="d-block w-100" alt="Slide1">
             </div>
-        </section>
-        <main class="textoSeccion">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic suscipit illum exercitationem,
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/consultorio 2.jpg" class="d-block w-100" alt="Slide2">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/consultorio 3.jpg" class="d-block w-100" alt="Slide3">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/consultorio 4.jpg" class="d-block w-100" alt="Slide4">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/consultorio 5.jpg" class="d-block w-100" alt="5">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/consultorio 6.jpg" class="d-block w-100" alt="Slide6">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/consultorio 7.jpg" class="d-block w-100" alt="Slide7">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/consultorio 8.jpg" class="d-block w-100" alt="Slide8">
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section class="w=50 text-center pt-5" id="intro">
+        <h2 class="p-3 fs-2 border-top border-3">Acerca de</h2>
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+        <p class="p-3 fs-4"> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic suscipit illum
+                exercitationem,
                 cumque,
                 consequatur aperiam excepturi sunt, delectus dolor pariatur quibusdam mollitia dignissimos odio.
                 Numquam
-                temporibus fugiat fugit hic labore!</h3>
-        </main>
-        <section class="imagenes">
-            <img src="./img/consultorio.jpg" alt="">
-            <img src="./img/consultorio 2.jpg" alt="">
-            <img src="./img/consultorio 4.jpg" alt="">
-            <img src="./img/consultorio 5.jpg" alt="">
-            <img src="./img/consultorio 6.jpg" alt="">
-            <img src="./img/consultorio 3.jpg" alt="">
-            <img src="./img/consultorio 7.jpg" alt="">
-            <img src="./img/consultorio 8.jpg" alt="">
-        </section>
-        <aside class="banner">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lLxjK4GcGMA"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                temporibus fugiat fugit hic labore!</span>
 
-        </aside>
+        </p>
+    </section>
+    <footer id="pie" class="w-100 d-flex align-items justify-content-center flex-wrap">
+        <div id="iconos">
+            <a href="https://goo.gl/maps/ZP5Rj73B7KSN8KAD8" target="blank"><i class="bi bi-geo-alt"></i></a>
+            <a href="tel:+5491146287979"><i class="bi bi-telephone"></i></a>
+            <a href="+5491146287979"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.facebook.com/" target="blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://twitter.com/?lang=es" target="blank"><i class="bi bi-twitter"></i></a>
+        </div>
 
-        <footer id="pie">
-            <a href="tel:+5491146287979">Teléfono</a>
-            <a href="https://goo.gl/maps/ZP5Rj73B7KSN8KAD8" target="blank"> Dirección </a>
-            <a href="https://www.facebook.com/" target="blank"> Seguinos en Facebook </a>
-            <a href="https://www.instagram.com/" target="blank"> Seguinos en Instagram </a>
-            <a href="https://twitter.com/?lang=es" target="blank"> Seguinos en Twitter </a>
-        </footer>
+    </footer>
 
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="./css/main.js"></script>
 </body>
 
 </html>

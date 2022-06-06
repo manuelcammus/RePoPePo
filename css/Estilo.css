@@ -1,163 +1,44 @@
 * {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+    margin: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat$disply=swap');
 
-
-.menu li {
-    display: inline;
+body {
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
 }
 
-.menu ul li :hover {
-    list-style: none;
-    background-color: blueviolet;
-    color: blanchedalmond;
-}
-
-
-.logo {
-    grid-area: logo;
-}
-
-.tituloPagina {
-    grid-area: titulo;
-}
-
-.acerca {
-    grid-area: acerca;
-}
-
-.menu {
-    grid-area: nav;
-}
-
-.tituloSeccion {
-
-    grid-area: titulosec;
-}
-
-.textoSeccion {
-
-    grid-area: textosec;
-}
-
-.banner {
-    grid-area: banner;
-    align-content: center;
-}
-
-#pie {
-    grid-area: redes;
+#menu li>a {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
 
 }
 
-.imagenes {
-    grid-area: image;
-    display: grid;
-    gap: 10px;
-    align-items: stretch;
-    align-content: stretch;
-    justify-content: space-around;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+#menu form>button {
+    font-size: 15px;
+    font-weight: bold;
+}
+.carousel-inner {
+    max-height: 42rem;
+
 }
 
-
-#grid-container {
-    display: grid;
-    gap: 10px;
-    padding: 10px;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    grid-template-areas:
-        "acerca titulo titulo"
-        "titulosec titulosec titulosec"
-        "textosec textosec textosec"
-        "image image banner"
-        "image image banner"
-        "image image banner"
-        "redes redes redes";
-    font-size: large;
+footer {
+background: #1b2a4e;
+min-height: 100px;
+align-content: center;
+justify-content: stretch;
 }
-
-footer a {
-    display: inline;
-    margin-right: 50px;
+#iconos i {
+    font-size: 30px;
+    padding: 0 15px;
+    color: #f3f3f3;
 }
-
-
-@media screen and (max-width: 420px) {
-    #grid-container {
-        display: grid;
-        gap: 10px;
-        padding: 10px;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-        grid-template-areas:
-            "logo"
-            "acerca"
-            "titulo"
-            "titulosec"
-            "textosec"
-            "image"
-            "redes";
-        font-size: small;
-    }
-
-    footer a {
-        display: inline;
-        margin-right: 10px;
-        font-size: smaller;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #grid-container {
-        display: grid;
-        gap: 10px;
-        padding: 10px;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-        flex-flow: column;
-        justify-content: space-around;
-        font-size: x-small;
-        grid-template-areas:
-            "logo acerca"
-            "titulo titulo"
-            "nav nav"
-            "titulosec titulosec"
-            "textosec textosec"
-            "banner banner"
-            "image image"
-            "image image"
-            "image image"
-            "redes redes";
-        font-size: small;
-    }
-
-    .imagenes {
-        display: grid;
-        display: grid;
-        gap: 10px;
-        align-items: stretch;
-        align-content: stretch;
-        justify-content: space-around;
-        justify-items: center;
-        grid-template-columns: 1fr 1fr;
-
-    }
-
-    footer a {
-        display: inline;
-        margin-right: 20px;
+@media (max-width:768px) {
+    #intro {
+        width:90% !important;
     }
 }
