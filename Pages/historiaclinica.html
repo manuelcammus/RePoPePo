@@ -1,61 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ar" dir="rtl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/Estilo.css">
     <title>Historia Clinica</title>
-    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <header class="encabezado">
-        <div class="logo">
-            <img src="../img/logo 2.jpg" alt="">
-        </div>
-        <div class="tituloPagina">
-            <h1>Historia Clinica</h1>
-        </div>
-        <div>
-            <a href="#pie"> Ir al pie de pagina</a>
-        </div>
-        <hr>
-        <nav class="menu">
-            <ul>
-                <li><a href="../index.html"> Home</a></li>
-                <li><a href="./login.html"> Login</a></li>
-                <li><a href="./altausuario.html"> Alta de Usuario</a></li>
-                <li><a href="./turnos.html"> Turnos</a></li>
-                <li><a href="./historiaclinica.html"> Historia Clinica</a></li>
-                <li><a href="./OOSS.html"> Obras Sociales</a></li>
-                <li><a href="./profesionales.html"> Profesionales</a></li>
-            </ul>
-        </nav>
+
+    <header class="container-fluid bg-primary d-flex justify-content-center">
+        <p class="text-ligth mb-0 p-2 fs-3">Sistema de Gestión de Consultorios</p>
     </header>
-    <hr>
-    <main class="main">
-        <section class="tituloSeccion">
-            <div>
-                <h2><strong>HISTORIA CLINICA</strong> </h2>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="#">
+                <span class="text-primary fs-5 fw-bold">SGC</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./turnos.html">Turnos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./OOSS.html">O. Sociales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./profesionales.html">Profesionales</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Usuarios
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="./altausuario.html">Alta de Usuario</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./historiaclinica.html">Historia Clínica</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pie">Sobre Nosotros</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary btn-primary-online-success" type="submit">Búsqueda<button>
+                </form>
             </div>
-            <div>
-                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel aliquid sint quaerat non enim repellat,
-                    corrupti molestias maxime doloribus, possimus id quo temporibus. Molestiae ipsum voluptatibus
-                    officia,
-                    ex labore tempora.</h3>
-            </div>
-        </section>
-    </main>
-    <hr>
-    <footer id="pie">
-        <a href="tel:+5491146287979">Teléfono</a>
-        <a href="https://goo.gl/maps/ZP5Rj73B7KSN8KAD8" target="blank"> Dirección </a>
-        <a href="https://www.facebook.com/" target="blank"> Seguinos en Facebook </a>
-        <a href="https://www.instagram.com/" target="blank"> Seguinos en Instagram </a>
-        <a href="https://twitter.com/?lang=es" target="blank"> Seguinos en Twitter </a>
+        </div>
+    </nav>
+
+    <section class="w=50 text-center pt-5" id="intro">
+        <h2 class="p-3 fs-2 border-top border-3">Historia Clinica</h2>
+        <h2 class="text-primary mb-4" id="oosstypewriter"></h2>
+        <p class="p-3 fs-4"> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic suscipit illum
+                exercitationem,
+                cumque,
+                consequatur aperiam excepturi sunt, delectus dolor pariatur quibusdam mollitia dignissimos odio.
+                Numquam
+                temporibus fugiat fugit hic labore!</span>
+
+        </p>
+    </section>
+    <footer id="pie" class="w-100 d-flex align-items justify-content-center flex-wrap">
+        <div id="iconos">
+            <a href="https://goo.gl/maps/ZP5Rj73B7KSN8KAD8" target="blank"><i class="bi bi-geo-alt"></i></a>
+            <a href="tel:+5491146287979"><i class="bi bi-telephone"></i></a>
+            <a href="+5491146287979"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.facebook.com/" target="blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://twitter.com/?lang=es" target="blank"><i class="bi bi-twitter"></i></a>
+        </div>
+
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="../css/main.js"></script>
 </body>
 
-</html>
+</html>  
